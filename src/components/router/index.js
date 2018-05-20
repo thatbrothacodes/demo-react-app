@@ -5,7 +5,7 @@ import Demos from '../../demos';
 import Excellence from '../../excellence';
 import Poker from '../../poker';
 
-const Main = () => (
+const Router = () => (
     <Switch>
         <Route exact path='/' component={Demos}/>
         <Route exact path='/crm' component={CRM}/>
@@ -14,4 +14,4 @@ const Main = () => (
     </Switch>
 );
 
-export default Main;
+export default Router;
