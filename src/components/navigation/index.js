@@ -6,12 +6,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import DraftsIcon from '@material-ui/icons/Drafts';
-import StarIcon from '@material-ui/icons/Star';
-import SendIcon from '@material-ui/icons/Send';
 import Divider from '@material-ui/core/Divider';
 
 const Navigation = props => (
@@ -30,29 +25,14 @@ const Navigation = props => (
       </div>
       <Divider />
       <List>
-        <ListItem button>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
-          <ListItemText primary="Inbox" />
+        <ListItem button component="a" href="crm">
+          <ListItemText primary="CRM" />
         </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <StarIcon />
-          </ListItemIcon>
-          <ListItemText primary="Starred" />
+        <ListItem button component="a" href="performance">
+          <ListItemText primary="Performance" />
         </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <SendIcon />
-          </ListItemIcon>
-          <ListItemText primary="Send mail" />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon>
-            <DraftsIcon />
-          </ListItemIcon>
-          <ListItemText primary="Drafts" />
+        <ListItem button component="a" href="poker">
+          <ListItemText primary="Poker" />
         </ListItem>
       </List>
     </Drawer>
