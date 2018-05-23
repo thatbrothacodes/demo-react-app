@@ -16,6 +16,7 @@ const drawerWidth = 240;
 
 const styles = theme => ({
   root: {
+    display: 'flex',
     flexGrow: 1,
   },
   appFrame: {
@@ -65,9 +66,10 @@ const styles = theme => ({
     ...theme.mixins.toolbar,
   },
   content: {
-    flexGrow: 1,
+    width: '100%',
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing.unit * 3,
+    paddingTop: '64px',
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -148,7 +150,6 @@ class App extends React.Component {
               [classes[`contentShift-${anchor}`]]: open,
             })}
           >
-            <div className={classes.drawerHeader} />
             <Router />
           </main>
         </div>

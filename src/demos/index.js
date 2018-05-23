@@ -37,7 +37,7 @@ const Demos = props => (
                     alignItems="center"
                 >
                     <h1>Welcome to React Code Demos</h1>
-                    <img width="300" src={logo} />
+                    <img width="300" alt="react logo" src={logo} />
                     <h3>Runtime: {React.version}</h3>
                 </Grid>
             </Grid>
@@ -53,7 +53,7 @@ const Demos = props => (
                     justify="center"
                 >
                     <a href="crm">
-                        <img src={Rolodex} />
+                        <img src={Rolodex} alt="crm logo" />
                     </a>
                     <div className={props.classes.title}>
                         <h3>CRM</h3>
@@ -70,7 +70,7 @@ const Demos = props => (
                     justify="center"
                 >
                     <a href="performance">
-                        <img src={Meter} />
+                        <img src={Meter} alt="performance logo"/>
                     </a>
                     <div className={props.classes.title}>
                         <h3>Performance</h3>
@@ -87,7 +87,7 @@ const Demos = props => (
                     justify="center"
                 >
                     <a href="poker">
-                        <img src={Poker} />
+                        <img src={Poker} alt="poker logo" />
                     </a>
                     <div className={props.classes.title}>
                         <h3>Poker</h3>
