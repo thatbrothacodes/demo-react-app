@@ -31,8 +31,8 @@ const Navigation = props => (
         <ListItem button component="a" href="performance">
           <ListItemText primary="Performance" />
         </ListItem>
-        <ListItem button component="a" href="poker">
-          <ListItemText primary="Poker" />
+        <ListItem button component="a" href="spades">
+          <ListItemText primary="Spades" />
         </ListItem>
       </List>
     </Drawer>
